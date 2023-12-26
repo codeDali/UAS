@@ -1,12 +1,10 @@
 <?php
 
  include 'connection.php';
-    $NIM = $_POST['NIM'];
-    $Nama = $_POST['Nama'];
-    $Jurusan = $_POST['Jurusan'];
-    $Telpon = $_POST['Telpon'];
-    $sql = "INSERT INTO mahasiswa (NIM,Nama,Jurusan,Telpon) VALUES ('$NIM','$Nama','$Jurusan','$Telpon')";
+    $nama = $_POST['nama'];
+    $kedekatan = $_POST['kedekatan'];
+    $sql = "INSERT INTO mitra (nama,kedekatan) VALUES ('$nama','$kedekatan')";
     $conn->query($sql);
-    header("Location:home.php");
+    header("Location:admin.php");
 
 ?>

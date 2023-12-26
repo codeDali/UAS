@@ -13,13 +13,25 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $isExist = $result->num_rows;
 
 
-    if($isExist){
-        $_SESSION['username'] =$username;
-        header("location:home.php");
+ 
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        $role = $row['role'];
+
+        if ($role == 'admin') {
+            $_SESSION['username'] = $username;
+            header("location: admin.php");
+        } elseif ($role == 'user') {
+            $_SESSION['username'] = $username;
+            header("location: home.php");
+        }
     } else{
         echo '<script>alert("Username atau password salah")</script>';
         }
 }
 
 
+
 ?>
+

@@ -1,0 +1,107 @@
+.navbar-brand{
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.gerak {
+text-align: right;
+}
+
+p#garis {
+    color: black;
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
+ 
+}
+
+.logo{
+
+}
+
+.nav-link{
+    font-family: 'Inter';
+    color: black;
+    margin-right: 19px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #DA4933; 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #DA4933; 
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+
+.dropdown-item{
+    font-family: 'Inter';
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #DA4933;
+}
+
+.carousel-inner {
+    padding : 25px 35px;
+}
+
+.carousel-control-prev,
+    .carousel-control-next {
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+    .carousel-control-next:hover {
+    transform: scale(1.2);
+}
+
+.card {
+    margin-top: 50px;
+    height: 230px;
+    border: none;
+}
+
+.card-img {
+    width: 30px;
+}
+
+.card-title {
+    padding-top: -30px;
+    font-family: 'Playfair';
+    font-weight: 900;
+}
+
+.card-text {
+    font-family: 'Inter';
+    font-size: 13px;
+    opacity: 75%;
+}
+
+.btn-primary {
+    margin-top: 3px;
+    background-color: white;
+    color: black;
+    font-family: 'Inter';
+    border-radius: 10px;
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: #da4933;
+    color: white;
+    font-family: 'Inter';
+    
+    border: none;
+  }
+  
+.d-flex.flex-column.justify-content-start {
+    font-family: 'Inter';
+    text-decoration: none;
+  }

@@ -1,7 +1,7 @@
 <?php
  include 'connection.php';
-    $NIM = $_GET['NIM'];
-    $sql = "DELETE FROM mahasiswa WHERE NIM ='$NIM'";
+    $nama = $_GET['nama'];
+    $sql = "DELETE FROM mitra WHERE nama ='$nama'";
     $conn->query($sql);
-    header("Location:home.php");
+    header("Location:admin.php");
 ?>
