@@ -18,7 +18,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         header("location:home.php");
     } else{
         echo '<script>alert("Username atau password salah")</script>';
-    }
+        }
 }
 
 
